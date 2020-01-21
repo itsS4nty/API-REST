@@ -15,4 +15,6 @@ app.get('/usuarios/819', function (req, res) {
 }
     res.send(us1);
 });
-app.listen(app.get('port'));
+app.listen(app.get('port'), ()=> {
+    console.log("Servidor en funcionamiento")
+});
